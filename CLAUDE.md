@@ -45,9 +45,15 @@ Sito vetrina di RelateSales. Vite + React 19 + TypeScript + Tailwind CSS v4.
 - Testi del sito in italiano.
 - Stile solo con classi Tailwind.
 
-## GitHub — SOLO account gmadconsulting
+## GitHub e Vercel — SOLO account gmadconsulting
 
 Repo: gmadconsulting/relate-sales-web. Non usare né attivare mai l'account `andreadonadoni` per questo progetto.
 
 - La git config locale del repo fissa autore e credenziali su gmadconsulting: non modificarla.
 - Mai `gh auth switch`. Per i comandi `gh` usa `GH_TOKEN=$(gh auth token --user gmadconsulting) gh ...`.
+
+### Pubblicazione
+
+- «Pusha» o «pubblica» = commit + `git push` + deploy di produzione su Vercel. Vercel non è collegato al repo: senza il deploy il sito non si aggiorna.
+- Prima controlla `npx vercel@latest whoami` (deve dire `gmadconsulting`), poi `npx vercel@latest deploy --prod --yes --scope gmad-consulting`.
+- Produzione: https://www.relatesale.com
