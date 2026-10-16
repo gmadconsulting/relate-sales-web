@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { Container } from '@/components/ui'
 import { VideoProvider } from '@/components/VideoDialog'
 import { EASE } from '@/lib/motion'
+import { JV_PARTNERS } from '@/lib/brand'
 import { LEGAL } from '@/lib/legal'
 import { Footer } from '@/sections/Footer'
 import { Nav } from '@/sections/Nav'
@@ -390,6 +391,11 @@ export function PrivacyPage() {
                   Il titolare del trattamento è <strong>{LEGAL.company}</strong>
                   , {LEGAL.form}, con sede in {LEGAL.address} (di seguito il
                   «Titolare» o «noi»), che gestisce il servizio RelateSales.
+                </p>
+                <p>
+                  RelateSales è realizzato in joint venture con {JV_PARTNERS[0]}{' '}
+                  e {JV_PARTNERS[1]}. Titolare del trattamento dei dati raccolti
+                  tramite questo sito resta {LEGAL.company}.
                 </p>
                 <p>
                   Per qualsiasi domanda su questa informativa o per esercitare i

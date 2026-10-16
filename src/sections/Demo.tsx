@@ -2,6 +2,7 @@ import { CheckCircle2, Play } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useState, type FormEvent } from 'react'
 import { Container } from '@/components/ui'
+import { JointVenture } from '@/components/JointVenture'
 import { useOpenVideo } from '@/components/VideoDialog'
 import { EASE, Reveal, Words } from '@/lib/motion'
 
@@ -61,6 +62,12 @@ export function Demo() {
             <p className="mt-4 text-[19px] leading-relaxed font-semibold">
               E esci con il percorso delle tue trattative già disegnato.
             </p>
+            <div className="mt-10 border-t-[0.5px] border-white/15 pt-6">
+              <JointVenture
+                tone="dark"
+                label="RelateSales nasce in joint venture con"
+              />
+            </div>
           </Reveal>
         </div>
 

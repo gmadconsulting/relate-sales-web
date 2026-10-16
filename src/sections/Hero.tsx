@@ -10,6 +10,7 @@ import { APP_H, APP_W } from '@/components/mockups/AppFrame'
 import { DashboardScreen } from '@/components/mockups/screens'
 import { ScaledFrame } from '@/components/ScaledFrame'
 import { Container, DemoButton, Eyebrow } from '@/components/ui'
+import { JointVenture } from '@/components/JointVenture'
 import { useOpenVideo } from '@/components/VideoDialog'
 import { useEffect, useState } from 'react'
 import { EASE, PlayProvider, Words } from '@/lib/motion'
@@ -163,6 +164,14 @@ export function Hero() {
           </span>
           <span>Lo impostiamo noi</span>
         </motion.p>
+        <motion.div
+          {...enter(1.25)}
+          className="mt-8 flex items-center justify-center gap-4"
+        >
+          <span className="bg-separator hidden h-[0.5px] w-12 sm:block" />
+          <JointVenture />
+          <span className="bg-separator hidden h-[0.5px] w-12 sm:block" />
+        </motion.div>
       </Container>
 
       <Container className="relative mt-16 sm:mt-20">

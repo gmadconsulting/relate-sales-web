@@ -1,4 +1,5 @@
 import { Logo } from '@/components/Logo'
+import { JointVenture } from '@/components/JointVenture'
 import { Container } from '@/components/ui'
 import { LEGAL } from '@/lib/legal'
 
@@ -14,6 +15,7 @@ export function Footer() {
             <p className="text-muted mt-3 text-[15px]">
               Il gestionale commerciale con meno funzioni.
             </p>
+            <JointVenture className="mt-1.5" />
           </div>
           <nav
             className="flex gap-6 text-[14px] font-medium"
