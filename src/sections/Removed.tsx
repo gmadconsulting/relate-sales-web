@@ -100,7 +100,7 @@ export function Removed() {
         <Reveal className="shadow-card mt-12 rounded-[14px] bg-white px-5 sm:px-8">
           <div className="border-separator text-muted grid grid-cols-2 gap-4 border-b-[0.5px] pt-6 pb-3 text-[11px] font-semibold tracking-[0.08em] uppercase sm:gap-10 sm:text-[12px]">
             <span>Negli altri CRM</span>
-            <span className="text-primary">In Relate Sales</span>
+            <span className="text-primary">In RelateSales</span>
           </div>
           {rows.map(([b, a]) => (
             <Row key={b} before={b} after={a} />

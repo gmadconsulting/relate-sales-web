@@ -1,4 +1,4 @@
-# Relate Sales — sito web
+# RelateSales — sito web
 
 Vite + React + TypeScript + Tailwind CSS v4.
 

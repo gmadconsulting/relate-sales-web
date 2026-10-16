@@ -15,7 +15,7 @@ const faqs = [
   ],
   [
     'Ho già un gestionale per la contabilità. Serve anche questo?',
-    "Il gestionale contabile segue quello che hai già venduto. Relate Sales segue quello che stai ancora vendendo: contatti, visite, preventivi, trattative. Lavorano uno accanto all'altro.",
+    "Il gestionale contabile segue quello che hai già venduto. RelateSales segue quello che stai ancora vendendo: contatti, visite, preventivi, trattative. Lavorano uno accanto all'altro.",
   ],
   [
     'Funziona dal telefono?',

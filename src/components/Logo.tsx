@@ -18,7 +18,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
       <span
         className={`font-display text-[17px] font-bold tracking-tight ${compact ? 'hidden sm:inline' : ''}`}
       >
-        Relate Sales
+        RelateSales
       </span>
     </span>
   )

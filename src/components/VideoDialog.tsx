@@ -34,7 +34,7 @@ export function VideoProvider({ children }: { children: ReactNode }) {
           onClick={() => setOpen(false)}
           role="dialog"
           aria-modal="true"
-          aria-label="Video: come funziona Relate Sales"
+          aria-label="Video: come funziona RelateSales"
         >
           <div
             className="animate-dialog-in bg-ink shadow-sheet relative aspect-video w-full max-w-4xl overflow-hidden rounded-[14px]"

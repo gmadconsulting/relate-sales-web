@@ -1,6 +1,6 @@
-# Relate Sales — sito web
+# RelateSales — sito web
 
-Sito vetrina di Relate Sales. Vite + React 19 + TypeScript + Tailwind CSS v4.
+Sito vetrina di RelateSales. Vite + React 19 + TypeScript + Tailwind CSS v4.
 
 ## Comandi
 
@@ -33,6 +33,7 @@ Sito vetrina di Relate Sales. Vite + React 19 + TypeScript + Tailwind CSS v4.
 
 ## Copy
 
+- Il nome del prodotto si scrive sempre **RelateSales** (attaccato, S maiuscola). Mai "Relate Sales".
 - Il testo viene da "Landing page — Gestionale Relate Sales" (doc del cliente): non riscriverlo.
 - Una sola azione in tutta la pagina: "Richiedi una demo" (`DemoButton`, ancora `#demo`).
 

@@ -41,7 +41,7 @@ export function Day() {
   return (
     <section className="bg-white">
       <Container className="pt-24 text-center sm:pt-32">
-        <SectionTitle text="Se sai usare il telefono, sai usare Relate Sales." />
+        <SectionTitle text="Se sai usare il telefono, sai usare RelateSales." />
         <Reveal delay={0.25}>
           <p className="text-muted mx-auto mt-5 max-w-2xl text-[19px]">
             Una giornata qualunque di Marco, commerciale di un'azienda
