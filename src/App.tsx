@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { VideoProvider } from '@/components/VideoDialog'
 import { Calculator } from '@/sections/Calculator'
 import { Day } from '@/sections/Day'
@@ -18,6 +19,13 @@ import { Tried } from '@/sections/Tried'
 import { Zeros } from '@/sections/Zeros'
 
 export default function App() {
+  // Arrivando da un'altra pagina con un'ancora (es. /#prezzi) scorre alla sezione dopo il render
+  useEffect(() => {
+    const id = window.location.hash.slice(1)
+    if (id)
+      requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView())
+  }, [])
+
   return (
     <VideoProvider>
       <Nav />

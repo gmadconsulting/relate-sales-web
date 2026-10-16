@@ -16,7 +16,7 @@ export function DemoButton({
 }: { size?: keyof typeof sizes } & AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <a
-      href="#demo"
+      href="/#demo"
       className={`bg-primary hover:bg-primary-hover inline-flex items-center justify-center gap-1.5 font-semibold whitespace-nowrap text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_1px_2px_rgba(253,108,1,0.3)] transition-[background-color,transform,box-shadow] duration-200 ease-out hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.18),0_6px_16px_-4px_rgba(253,108,1,0.45)] active:scale-[0.98] ${sizes[size]} ${className}`}
       {...rest}
     >

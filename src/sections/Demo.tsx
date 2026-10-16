@@ -194,6 +194,16 @@ export function Demo() {
                   Ti richiamiamo entro un giorno lavorativo per fissare
                   l'orario.
                 </p>
+                <p className="text-tertiary text-center text-[12px] leading-snug">
+                  Inviando la richiesta dichiari di aver letto l’
+                  <a
+                    href="/privacy"
+                    className="hover:text-muted underline underline-offset-2"
+                  >
+                    informativa privacy
+                  </a>
+                  .
+                </p>
               </motion.form>
             )}
           </AnimatePresence>

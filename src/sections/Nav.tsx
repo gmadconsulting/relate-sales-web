@@ -11,10 +11,10 @@ import { DemoButton } from '@/components/ui'
 import { EASE } from '@/lib/motion'
 
 const links = [
-  { href: '#come-funziona', label: 'Come funziona' },
-  { href: '#cosa-abbiamo-tolto', label: 'Cosa abbiamo tolto' },
-  { href: '#prezzi', label: 'Prezzi' },
-  { href: '#domande', label: 'Domande' },
+  { href: '/#come-funziona', label: 'Come funziona' },
+  { href: '/#cosa-abbiamo-tolto', label: 'Cosa abbiamo tolto' },
+  { href: '/#prezzi', label: 'Prezzi' },
+  { href: '/#domande', label: 'Domande' },
 ]
 
 export function Nav() {
@@ -41,7 +41,7 @@ export function Nav() {
         }`}
         aria-label="Principale"
       >
-        <a href="#top" aria-label="Relate Sales, torna su">
+        <a href="/#top" aria-label="RelateSales, torna su">
           <Logo compact />
         </a>
         <ul

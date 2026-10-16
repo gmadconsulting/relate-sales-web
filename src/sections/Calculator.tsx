@@ -197,7 +197,7 @@ export function Calculator() {
               <p className="mt-2 text-[15px] text-white/60">all'anno</p>
             </div>
             <a
-              href="#demo"
+              href="/#demo"
               className="bg-primary hover:bg-primary-hover mt-auto flex min-h-13 w-full items-center justify-center rounded-xl px-5 py-3 text-center text-base leading-snug font-semibold text-white transition-colors"
             >
               Vediamolo sui tuoi numeri veri — Richiedi una demo
