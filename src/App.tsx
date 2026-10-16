@@ -1,14 +1,13 @@
 import { useEffect } from 'react'
-import { VideoProvider } from '@/components/VideoDialog'
+import { usePageEnter } from '@/lib/router'
 import { Calculator } from '@/sections/Calculator'
 import { Day } from '@/sections/Day'
 import { Demo } from '@/sections/Demo'
 import { Faq } from '@/sections/Faq'
-import { Footer } from '@/sections/Footer'
 import { ForWhom } from '@/sections/ForWhom'
 import { Hero } from '@/sections/Hero'
-import { Nav } from '@/sections/Nav'
 import { Pillars } from '@/sections/Pillars'
+import { Platform } from '@/sections/Platform'
 import { Pricing } from '@/sections/Pricing'
 import { Problem } from '@/sections/Problem'
 import { Removed } from '@/sections/Removed'
@@ -19,34 +18,30 @@ import { Tried } from '@/sections/Tried'
 import { Zeros } from '@/sections/Zeros'
 
 export default function App() {
-  // Arrivando da un'altra pagina con un'ancora (es. /#prezzi) scorre alla sezione dopo il render
+  usePageEnter()
   useEffect(() => {
-    const id = window.location.hash.slice(1)
-    if (id)
-      requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView())
+    document.title =
+      'RelateSales — Il gestionale commerciale per aziende industriali'
   }, [])
 
   return (
-    <VideoProvider>
-      <Nav />
-      <main>
-        <Hero />
-        <Target />
-        <Problem />
-        <Tried />
-        <Pillars />
-        <Tour />
-        <Day />
-        <Removed />
-        <Start />
-        <Calculator />
-        <ForWhom />
-        <Zeros />
-        <Pricing />
-        <Faq />
-        <Demo />
-      </main>
-      <Footer />
-    </VideoProvider>
+    <>
+      <Hero />
+      <Target />
+      <Problem />
+      <Tried />
+      <Pillars />
+      <Tour />
+      <Platform />
+      <Day />
+      <Removed />
+      <Start />
+      <Calculator />
+      <ForWhom />
+      <Zeros />
+      <Pricing />
+      <Faq />
+      <Demo />
+    </>
   )
 }

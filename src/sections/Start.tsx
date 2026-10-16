@@ -25,9 +25,11 @@ const LINE = 1.6 // secondi per disegnare tutta la linea
 
 export function Start() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section id="come-si-parte" className="bg-white py-24 sm:py-32">
       <Container>
         <SectionTitle
+          eyebrow="Avvio"
+
           className="max-w-4xl"
           text="Ci mandi il tuo Excel."
           accent="Te lo restituiamo come gestionale."

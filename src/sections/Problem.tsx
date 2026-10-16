@@ -154,6 +154,8 @@ export function Problem() {
     <section className="bg-ink text-white">
       <Container className="pt-24 pb-10 sm:pt-32">
         <SectionTitle
+          eyebrow="Il problema"
+
           className="max-w-4xl sm:text-[48px] lg:text-[56px]"
           text="Ogni commerciale ha il suo sistema."
           accent="La tua azienda non ne ha nessuno."

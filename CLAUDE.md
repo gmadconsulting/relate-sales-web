@@ -10,7 +10,10 @@ Sito vetrina di RelateSales. Vite + React 19 + TypeScript + Tailwind CSS v4.
 
 ## Struttura
 
-- `src/App.tsx` — composizione della pagina
+- `src/main.tsx` — router (home `/`, `/prodotto/<slug>`, `/privacy`) con navbar, footer e transizione tra pagine
+- `src/App.tsx` — composizione della landing
+- `src/pages/` — pagine funzione (`Feature.tsx`, contenuti in `src/lib/features.ts`), privacy, 404
+- `src/lib/router.tsx` — router minimo su History API: intercetta i link interni `<a href="/...">`
 - `src/sections/` — le 16 sezioni della landing, nell'ordine del copy
 - `src/components/` — componenti riutilizzabili
 - `src/components/mockups/` — schermate del gestionale ricostruite in HTML sugli screenshot reali (dati inventati in `data.ts`, atomi UI in `kit.tsx`, shell in `AppFrame.tsx`)

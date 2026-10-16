@@ -90,7 +90,10 @@ export function Removed() {
   return (
     <section id="cosa-abbiamo-tolto" className="py-24 sm:py-32">
       <Container className="max-w-5xl">
-        <SectionTitle text="Il CRM più completo? Non siamo noi." />
+        <SectionTitle
+          eyebrow="Scelte di prodotto"
+          text="Il CRM più completo? Non siamo noi."
+        />
         <Reveal delay={0.2}>
           <p className="text-muted mt-5 max-w-2xl text-[19px]">
             Ogni funzione in più è un motivo in più per non aprirlo. Queste le

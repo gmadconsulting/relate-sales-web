@@ -1,5 +1,5 @@
 import type { AnchorHTMLAttributes, ReactNode } from 'react'
-import { Words } from '@/lib/motion'
+import { Reveal, Words } from '@/lib/motion'
 
 const sizes = {
   md: 'h-9 px-3.5 text-sm rounded-lg',
@@ -53,25 +53,39 @@ export function SectionTitle({
   accent,
   tone = 'muted',
   className = '',
+  eyebrow,
 }: {
   text: string
   accent?: string
   tone?: keyof typeof accentTones
   className?: string
+  /** Etichetta di sezione sopra il titolo (es. «Il metodo») */
+  eyebrow?: string
 }) {
   const offset = text.split(' ').length * 0.045
   return (
-    <h2
-      className={`text-[34px] leading-[1.08] text-balance sm:text-[44px] lg:text-[52px] ${className}`}
-    >
-      <Words text={text} />
-      {accent && (
-        <>
-          {' '}
-          <Words text={accent} className={accentTones[tone]} delay={offset} />
-        </>
+    <>
+      {eyebrow && (
+        <Reveal>
+          <p
+            className={`mb-4 text-[13px] font-semibold tracking-[0.08em] uppercase ${tone === 'dim' ? 'text-primary' : 'text-primary'}`}
+          >
+            {eyebrow}
+          </p>
+        </Reveal>
       )}
-    </h2>
+      <h2
+        className={`text-[34px] leading-[1.08] text-balance sm:text-[44px] lg:text-[52px] ${className}`}
+      >
+        <Words text={text} />
+        {accent && (
+          <>
+            {' '}
+            <Words text={accent} className={accentTones[tone]} delay={offset} />
+          </>
+        )}
+      </h2>
+    </>
   )
 }
 

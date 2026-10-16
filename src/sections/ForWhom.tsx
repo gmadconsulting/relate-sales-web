@@ -16,9 +16,12 @@ const no = [
 
 export function ForWhom() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section id="per-chi-e" className="bg-white py-24 sm:py-32">
       <Container>
-        <SectionTitle text="Te lo diciamo prima: non è per tutti." />
+        <SectionTitle
+          eyebrow="Per chi è"
+          text="Te lo diciamo prima: non è per tutti."
+        />
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           <Reveal className="bg-background rounded-[14px] p-7 sm:p-9">
             <p className="text-[21px] font-semibold">È per te se:</p>

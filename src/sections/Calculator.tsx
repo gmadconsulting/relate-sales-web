@@ -136,9 +136,11 @@ export function Calculator() {
   const total = time + deals
 
   return (
-    <section className="py-24 sm:py-32">
+    <section id="calcolatore" className="py-24 sm:py-32">
       <Container>
         <SectionTitle
+          eyebrow="Il costo dell’inerzia"
+
           className="max-w-3xl"
           text="Quanto ti costa ogni anno lavorare senza un gestionale?"
         />

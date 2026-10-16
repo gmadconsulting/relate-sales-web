@@ -61,6 +61,8 @@ export function Pricing() {
       <Container>
         <div className="text-center">
           <SectionTitle
+            eyebrow="Prezzi"
+
             className="mx-auto max-w-3xl"
             text="Un prezzo per tutta l'azienda."
             accent="Utenti illimitati."

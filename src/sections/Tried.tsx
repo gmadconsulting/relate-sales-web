@@ -71,7 +71,10 @@ export function Tried() {
     <section className="py-24 sm:py-32">
       <Container className="grid items-center gap-14 lg:grid-cols-2">
         <div>
-          <SectionTitle text="Hai già pagato un CRM che nessuno apre?" />
+          <SectionTitle
+            eyebrow="Ci hai già provato"
+            text="Hai già pagato un CRM che nessuno apre?"
+          />
           <Reveal delay={0.2}>
             <p className="mt-6 text-[21px] font-semibold">
               Allora sai com'è andata.

@@ -25,9 +25,9 @@ export function Pillars() {
   const line = useTransform(p, [0.05, 0.85], [0, 1], { clamp: true })
 
   return (
-    <section className="bg-white">
+    <section id="metodo" className="bg-white">
       <Container className="pt-24 text-center sm:pt-32">
-        <SectionTitle text="Meno funzioni. Tutte usate." />
+        <SectionTitle eyebrow="Il metodo" text="Meno funzioni. Tutte usate." />
         <Reveal delay={0.2}>
           <p className="text-muted mx-auto mt-6 max-w-2xl text-[19px] leading-relaxed">
             Abbiamo fatto il contrario degli altri: invece di aggiungere

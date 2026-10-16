@@ -1,3 +1,4 @@
+import { ArrowRight } from 'lucide-react'
 import { AnimatePresence, motion } from 'motion/react'
 import { useRef, type ReactNode } from 'react'
 import { APP_H, APP_W } from '@/components/mockups/AppFrame'
@@ -74,24 +75,28 @@ function CardAnatomy() {
 
 const pages: {
   name: string
+  slug: string
   title: string
   text: string
   screen: ReactNode
 }[] = [
   {
     name: 'Panoramica',
+    slug: 'panoramica',
     title: 'Come vanno le vendite, in una schermata.',
     text: 'Trattative aperte, valore in ballo, trattative chiuse, quelle ferme. Apri e sai. Niente giro delle scrivanie, niente riunione del venerdì.',
     screen: <DashboardScreen />,
   },
   {
     name: 'Trattative',
+    slug: 'trattative',
     title: 'Ogni trattativa è una tessera che avanza.',
     text: 'Primo contatto, sopralluogo, preventivo, trattativa, ordine. Il percorso è già pronto e lo adattiamo alle tue fasi. Quando una trattativa va avanti, sposti la tessera. Fine.',
     screen: <PipelineScreen />,
   },
   {
     name: 'La tessera',
+    slug: 'trattative',
     title: "Tutto quello che serve sapere, a colpo d'occhio.",
     text: 'Il cliente e il valore. Da quanti giorni è ferma. Se il commerciale è già stato in visita. Chi la segue. La trattativa ferma da tre settimane si vede subito, prima che si raffreddi.',
     screen: (
@@ -102,24 +107,28 @@ const pages: {
   },
   {
     name: 'Contatti',
+    slug: 'contatti',
     title: 'Ogni cliente, con la sua scheda.',
     text: "Recapiti, persone di riferimento, trattative, documenti. Quando un commerciale cambia zona o lascia l'azienda, chi arriva dopo trova tutto. I clienti restano all'azienda.",
     screen: <ContactScreen />,
   },
   {
     name: 'Attività',
+    slug: 'attivita',
     title: 'Il prossimo passo di ogni trattativa.',
     text: 'Ogni trattativa ha sempre una cosa da fare, con una data e un responsabile. Il preventivo mandato tre settimane fa non resta più senza risposta.',
     screen: <ActivitiesScreen />,
   },
   {
     name: 'Calendario',
+    slug: 'calendario',
     title: "Visite e appuntamenti, in un'agenda sola.",
     text: 'Si collega a Google o Outlook con un clic. Gli appuntamenti sono legati al cliente: dal calendario apri la sua scheda.',
     screen: <CalendarScreen />,
   },
   {
     name: 'Posta',
+    slug: 'posta',
     title: 'Le email ai clienti, senza uscire dal gestionale.',
     text: 'Colleghi la tua casella Gmail o Outlook con un clic. Leggi e rispondi come sei abituato, con le conversazioni in ordine, e quando scrivi a un cliente il suo indirizzo lo trovi già tra i contatti.',
     screen: <MailScreen />,
@@ -145,7 +154,10 @@ export function Tour() {
   return (
     <section id="come-funziona" className="bg-background">
       <Container className="pt-24 text-center sm:pt-32">
-        <SectionTitle text="Sette pagine. Tutto quello che serve per vendere." />
+        <SectionTitle
+          eyebrow="La piattaforma"
+          text="Sette pagine. Tutto quello che serve per vendere."
+        />
         <Reveal delay={0.25}>
           <p className="text-muted mx-auto mt-5 max-w-2xl text-[19px]">
             Nessun modulo da attivare, nessun menu da esplorare. Eccole, una
@@ -182,6 +194,19 @@ export function Tour() {
                   <p className="text-muted mt-3 text-[16px] leading-relaxed sm:text-[17px]">
                     {pages[active].text}
                   </p>
+                  <a
+                    href={`/prodotto/${pages[active].slug}`}
+                    className="group text-primary mt-5 inline-flex items-center gap-1.5 text-[15px] font-semibold"
+                  >
+                    Scopri{' '}
+                    {pages[active].slug === 'trattative'
+                      ? 'Trattative'
+                      : pages[active].name}
+                    <ArrowRight
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-0.5"
+                    />
+                  </a>
                 </motion.div>
               </AnimatePresence>
             </div>
