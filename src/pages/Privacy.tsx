@@ -258,6 +258,7 @@ const toc = [
   ['cookie', 'Cookie e strumenti di tracciamento'],
   ['minori', 'Minori'],
   ['modifiche', 'Modifiche a questa informativa'],
+  ['dati-google', 'Dati degli account Google'],
 ] as const
 
 function Toc() {
@@ -417,6 +418,13 @@ export function PrivacyPage() {
                 trattamento e {LEGAL.company} agisce come responsabile del
                 trattamento ai sensi dell’art. 28 GDPR, sulla base di un
                 apposito accordo sul trattamento dei dati.
+              </p>
+              <p>
+                Come il gestionale usa i dati degli account Google che gli
+                utenti collegano (Gmail e Google Calendar) è spiegato nella
+                sezione <a href="#dati-google" className="text-primary hover:text-primary-hover font-medium">Dati degli account Google</a>{' '}
+                e nell’
+                <a href="https://app.relatesale.com/privacy" className="text-primary hover:text-primary-hover font-medium">informativa del gestionale</a>.
               </p>
             </Section>
 
@@ -807,6 +815,74 @@ export function PrivacyPage() {
                 vigore è sempre pubblicata su questa pagina, con la data
                 dell’ultimo aggiornamento indicata in alto. In caso di modifiche
                 sostanziali ti informeremo con mezzi adeguati.
+              </p>
+            </Section>
+
+            <Section
+              id="dati-google"
+              n={15}
+              title="Dati degli account Google (Gmail e Google Calendar)"
+            >
+              <p>
+                Nel gestionale RelateSales (app.relatesale.com) ogni utente può
+                scegliere di collegare il proprio account Google, con il
+                consenso dato nella schermata di Google. Il collegamento è
+                facoltativo e si può revocare in qualsiasi momento dal
+                gestionale o da{' '}
+                <a href="https://myaccount.google.com/permissions" className="text-primary hover:text-primary-hover font-medium">myaccount.google.com/permissions</a>.
+              </p>
+              <H3>Quali dati usiamo e perché</H3>
+              <List
+                items={[
+                  <>
+                    <strong>Gmail, lettura</strong> (gmail.readonly): mostrare
+                    all’utente, nella scheda di ogni cliente e nella sezione
+                    Posta, le email scambiate con quel cliente.
+                  </>,
+                  <>
+                    <strong>Gmail, invio</strong> (gmail.send): inviare le email
+                    che l’utente scrive nel gestionale e conferma con «Invia»,
+                    dal suo indirizzo.
+                  </>,
+                  <>
+                    <strong>Google Calendar</strong> (calendar.readonly,
+                    calendar.events): mostrare gli eventi nel calendario del
+                    gestionale e scrivere sul calendario principale
+                    dell’utente gli appuntamenti che crea, modifica o cancella
+                    nel gestionale. Gli altri eventi non vengono modificati.
+                  </>,
+                  <>
+                    <strong>Indirizzo email dell’account</strong>
+                    (userinfo.email): mostrare quale account è collegato.
+                  </>,
+                ]}
+              />
+              <H3>Cosa non facciamo</H3>
+              <List
+                items={[
+                  'Non vendiamo né cediamo i dati di Google a terzi.',
+                  'Non li usiamo per pubblicità, né per profilare gli utenti.',
+                  'Non li usiamo per addestrare modelli di intelligenza artificiale.',
+                  'Nessuna persona li legge, salvo consenso esplicito dell’utente per assistenza, per obblighi di sicurezza o di legge.',
+                ]}
+              />
+              <H3>Conservazione e sicurezza</H3>
+              <p>
+                I token di accesso sono cifrati. Le email vengono lette da
+                Google quando l’utente le apre e non vengono copiate in blocco;
+                gli eventi del calendario restano nel gestionale finché il
+                collegamento è attivo. Quando l’utente scollega l’account, i
+                token vengono eliminati e gli eventi importati spariscono dal
+                gestionale. L’utente può chiedere la cancellazione dei dati
+                scrivendo a <Mail />.
+              </p>
+              <p lang="en">
+                RelateSales’ use and transfer to any other app of information
+                received from Google APIs will adhere to the{' '}
+                <a href="https://developers.google.com/terms/api-services-user-data-policy" className="text-primary hover:text-primary-hover font-medium">
+                  Google API Services User Data Policy
+                </a>
+                , including the Limited Use requirements.
               </p>
             </Section>
 
