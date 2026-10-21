@@ -33,6 +33,10 @@ const columns: { title: string; links: { href: string; label: string }[] }[] = [
       { href: '/#demo', label: 'Richiedi una demo' },
       { href: '/privacy', label: 'Informativa privacy' },
       { href: '/privacy#cookie', label: 'Cookie' },
+      {
+        href: 'https://app.relatesale.com/privacy',
+        label: 'Privacy del gestionale',
+      },
     ],
   },
 ]
